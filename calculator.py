@@ -3,9 +3,6 @@ class Calculator:
     This class provides basic arithmetic operations.
     """
 
-    def __init__(self):
-        pass
-
     def division(self, a, b):
         """
         Divides a by b.
