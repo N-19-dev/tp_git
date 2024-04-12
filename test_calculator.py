@@ -1,21 +1,14 @@
-from calculator import Addition, Soustraction, Division
+from calculator import Calculator
 
 def test_addition():
-    add_instance = Addition()
-    assert add_instance.add(1, 1) == 2
+    calc = Calculator()
+    assert calc.addition(5, 5) == 10
 
 def test_soustraction():
-    subtract_instance = Soustraction()
-    assert subtract_instance.subtract(1, 1) == 0
+    calc = Calculator()
+    assert calc.soustraction(15, 5) == 10
 
 def test_division():
-    divide_instance = Division()
-    assert divide_instance.divide(1, 1) == 1
-
-# Exécuter les tests
-test_addition()
-test_soustraction()
-test_division()
-
-print("Tous les tests ont réussi !")
+    calc = Calculator()
+    assert calc.division(100, 10) == 10
 
